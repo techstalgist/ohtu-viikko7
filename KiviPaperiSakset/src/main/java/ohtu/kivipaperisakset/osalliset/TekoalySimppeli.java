@@ -1,13 +1,14 @@
-package ohtu.kivipaperisakset;
+package ohtu.kivipaperisakset.osalliset;
 
-public class Tekoaly {
+public class TekoalySimppeli implements Tekoaly {
 
     int siirto;
 
-    public Tekoaly() {
+    public TekoalySimppeli() {
         siirto = 0;
     }
 
+    @Override
     public String annaSiirto() {
         siirto++;
         siirto = siirto % 3;
@@ -21,7 +22,8 @@ public class Tekoaly {
         }
     }
 
-    void asetaSiirto(String ekanSiirto) {
+    @Override
+    public void asetaSiirto(String ekanSiirto) {
         // ei tehdä mitään 
     }
 }

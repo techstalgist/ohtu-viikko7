@@ -1,4 +1,4 @@
-package ohtu.kivipaperisakset;
+package ohtu.kivipaperisakset.osalliset;
 
 // Tuomari pitää kirjaa ensimmäisen ja toisen pelaajan pisteistä sekä tasapelien määrästä.
 public class Tuomari {
@@ -44,7 +44,12 @@ public class Tuomari {
 
         return false;
     }
+    
+    public boolean onkoOkSiirto(String siirto) {
+        return "k".equals(siirto) || "p".equals(siirto) || "s".equals(siirto);
+    }
 
+    @Override
     public String toString() {
         String s = "Pelitilanne: " + ekanPisteet + " - " + tokanPisteet + "\n"
                 + "Tasapelit: " + tasapelit;
