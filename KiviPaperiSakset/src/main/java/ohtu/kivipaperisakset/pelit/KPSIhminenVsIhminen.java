@@ -15,7 +15,7 @@ public class KPSIhminenVsIhminen extends Peli {
     
     @Override
     protected String kasitteleTokanSiirto(String ekanSiirto) {
-        io.print("Toisen pelaajan siirto: ");
+        io.printLine("Toisen pelaajan siirto: ");
         return toka.annaSiirto();
     }
 }

@@ -12,7 +12,7 @@ public abstract class Peli extends Pelitehdas {
         
     public void pelaa() {
         Tuomari tuomari = new Tuomari();
-        System.out.print("Ensimmäisen pelaajan siirto: ");
+        io.printLine("Ensimmäisen pelaajan siirto: ");
         String ekanSiirto = eka.annaSiirto();
         String tokanSiirto = kasitteleTokanSiirto(null);
         
@@ -20,7 +20,7 @@ public abstract class Peli extends Pelitehdas {
             tuomari.kirjaaSiirto(ekanSiirto, tokanSiirto);
             io.printLine(tuomari.toString());
             io.printLine("");
-            io.print("Ensimmäisen pelaajan siirto: ");
+            io.printLine("Ensimmäisen pelaajan siirto: ");
             ekanSiirto = eka.annaSiirto();
             tokanSiirto = kasitteleTokanSiirto(ekanSiirto);
         }
